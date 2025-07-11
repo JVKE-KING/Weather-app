@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 90%;
+  max-width: 480px;
+  background: linear-gradient(135deg, #00febd, #5b548a);
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px 35px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.search input {
+  flex: 1;
+  padding: 14px 25px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  background-color: #ebfffc;
+  color: #333;
+  transition: box-shadow 0.3s ease;
+}
+
+.search input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #c1f0e7;
+}
+
+.search button {
+  background-color: #ebfffc;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.search button:hover {
+  background-color: #d6f4ef;
+}
+
+.search img {
+  width: 20px;
+}
+
+.weather-icon {
+  width: 160px;
+  margin: 20px auto;
+}
+
+.temp {
+  font-size: 72px;
+  font-weight: 600;
+}
+
+.city {
+  font-size: 36px;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+}
+
+.col img {
+  width: 36px;
+}
+
+.humidity,
+.wind {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.weather {
+  display: none;
+}
+
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .temp {
+    font-size: 60px;
+  }
+
+  .city {
+    font-size: 30px;
+  }
+
+  .search input {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
