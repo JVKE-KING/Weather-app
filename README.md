@@ -5,7 +5,7 @@ It uses a public weather API to fetch real-time weather details based on the cit
 
 ## Features
 
-- lipkart-style homepage  
+- Search weather by city name
 - Real-time temperature, humidity and wind speed
 - Weather icons based on conditions
 - Error handling for invalid city names
