@@ -30,7 +30,7 @@ No backend or server is used.
 Download or clone the project:
 
 ```bash
-git clone https://github.com/JVKE-KING/Weather-app.git
+git clone https://github.com/jvkedev/Weather-app.git
 ```
 
 Open index.html in your browser.
